@@ -37,6 +37,19 @@ for (let index = 0; index < collection.length; index++) {
 }
 showCollection(myCollection);
 
+function findByArtist(collection,artist){
+  const result = []
+  for (let index = 0; index < collection.length; index++) {
+    const element = collection[index];
+
+    if (element.artist === artist){
+     result.push(element)
+    }
+  }
+return result;
+}
+findByArtist(myCollection,"Taylor Swift");
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
